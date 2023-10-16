@@ -1,0 +1,35 @@
+Documentação da API NewsAPI
+
+https://newsapi.org/
+
+A API NewsAPI é uma ferramenta que fornece acesso a várias fontes de notícias de todo o mundo. Ela permite que você obtenha notícias por categoria, país, idioma, palavras-chave e muito mais. Abaixo está a documentação do código JavaScript fornecido para a integração com a API NewsAPI.
+Endpoints da API:
+
+    Notícias em Destaque nos Estados Unidos:
+        Endpoint: https://newsapi.org/v2/top-headlines
+        Parâmetros:
+            country: Código do país para as notícias em destaque (por exemplo, us para Estados Unidos).
+            apiKey: Chave de API para autenticação (por exemplo, 399824b232a1497d86b892ff5eb91ef7).
+        Exemplo de Uso: https://newsapi.org/v2/top-headlines?country=us&apiKey=399824b232a1497d86b892ff5eb91ef7
+
+    Notícias Gerais nos Estados Unidos:
+        Endpoint: https://newsapi.org/v2/top-headlines
+        Parâmetros:
+            country: Código do país para as notícias em destaque (por exemplo, us para Estados Unidos).
+            category: Categoria das notícias (por exemplo, general para notícias gerais).
+            apiKey: Chave de API para autenticação (por exemplo, 399824b232a1497d86b892ff5eb91ef7).
+        Exemplo de Uso: https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=399824b232a1497d86b892ff5eb91ef7
+
+    Outras Categorias nos Estados Unidos:
+        Os endpoints para outras categorias como Negócios, Esportes, Entretenimento e Tecnologia seguem o mesmo padrão, apenas mudando o valor do parâmetro category.
+
+    Busca por Palavra-chave nos Estados Unidos:
+        Endpoint: https://newsapi.org/v2/everything
+        Parâmetros:
+            q: Palavra-chave para a busca.
+            apiKey: Chave de API para autenticação (por exemplo, 399824b232a1497d86b892ff5eb91ef7).
+        Exemplo de Uso: https://newsapi.org/v2/everything?q=PALAVRA_CHAVE&apiKey=399824b232a1497d86b892ff5eb91ef7
+
+Estrutura do Código JavaScript:
+
+    O código JavaScript fornecido no arquivo app.js utiliza as URLs dos endpoints mencionados acima para fazer solicitações à API NewsAPI e exibir as notícias na interface do usuário.
